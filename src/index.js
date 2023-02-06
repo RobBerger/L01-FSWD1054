@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const title = React.createElement('h1', null, 'My First React App');
-ReactDOM.render(title, document.getElementById('root'));
+const heading = React.createElement('h1', null, 'Hello World!');
+
+const l1 = React.createElement('li', null, 'Bananas');
+const l2 = React.createElement('li', null, 'Milk');
+const l3 = React.createElement('li', null, 'Bread');
+
+const groceryList = React.createElement('ol', null, [l1, l2, l3]);
+
+ReactDOM.render([heading, groceryList], document.getElementById('root'));
+
+// const title = React.createElement('h1', null, 'My First React App');
+// ReactDOM.render(title, document.getElementById('root'));
 
 
 // import React from 'react';
