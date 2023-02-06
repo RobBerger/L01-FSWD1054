@@ -14,7 +14,12 @@ import ReactDOM from 'react-dom';
 const title = React.createElement('h1', null, 'My First React App');
 const paragraph = React.createElement('p', null, 'I am creating React Nodes and using the React library');
 
-const container = React.createElement('div', null, [title, paragraph]);
+const hero1 = React.createElement('li', null, 'Batman');
+const hero2 = React.createElement('li', null, 'Superman');
+const hero3 = React.createElement('li', null, 'Aquaman');
+const heroList = React.createElement('ul', null, [hero1, hero2, hero3]);
+
+const container = React.createElement('div', null, [title, paragraph, heroList]);
 
 ReactDOM.render(
   container,
