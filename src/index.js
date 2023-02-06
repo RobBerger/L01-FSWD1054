@@ -12,7 +12,14 @@ import ReactDOM from 'react-dom';
 // ReactDOM.render([heading, groceryList], document.getElementById('root'));
 
 const title = React.createElement('h1', null, 'My First React App');
-ReactDOM.render(title, document.getElementById('root'));
+const paragraph = React.createElement('p', null, 'I am creating React Nodes and using the React library');
+
+const container = React.createElement('div', null, [title, paragraph]);
+
+ReactDOM.render(
+  container,
+  document.getElementById('root')
+);
 
 
 // import React from 'react';
